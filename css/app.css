@@ -1,3 +1,93 @@
+*::before,
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: blue;
+  
+}
+
+.layout-grid {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 7fr 1fr;
+  /* grid-template-areas:
+    "h h h h h h h h h h h h"
+    "s1 s1 s1 s1 s1 s1 s2 s2 s2 s2 s2 s2"
+    "s3 s3 s3 s3 s3 s3 s4 s4 s4 s4 s4 s4"
+    "c c c c c c c c c c c c" */
+
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "s s s s s s s s s s s s"
+    "s3 s3 s3 s3 s3 s3 s4 s4 s4 s4 s4 s4"
+    "c c c c c c c c c c c c"
+}
+
+header {
+  grid-area: s;
+  background-color: red;
+  min-height: 100px;
+}
+
+.showcase {
+  grid-area: s;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.showcase-1 {
+  flex: 1;
+  background-color: blueviolet;
+}
+
+.showcase-2 {
+  flex: 1;
+  background-color: brown;
+
+}
+
+.showcase-3 {
+  flex: 1;
+  background-color: chocolate;
+}
+
+.showcase-4 {
+  flex: 1;
+  background-color: coral;
+}
+
+/* 
+.showcase-1 {
+  grid-area: s1;
+  background-color: blueviolet;
+}
+
+.showcase-2 {
+  grid-area: s2;
+  background-color: brown;
+
+}
+
+.showcase-3 {
+  grid-area: s3;
+  background-color: chocolate;
+}
+
+.showcase-4 {
+  grid-area: s4;
+  background-color: coral;
+} */
+
+.call-to-action {
+  grid-area: c;
+  background-color: black;
 }
