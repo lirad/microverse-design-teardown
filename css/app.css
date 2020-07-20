@@ -6,8 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Patua One', cursive;
 }
-
 
 ul{
   list-style: none;
@@ -19,6 +19,7 @@ body {
   margin: 0 auto;
   color: white;
   max-width: 1440px;
+  font-family: 'Patua One', cursive;
 }
 
 
@@ -45,9 +46,10 @@ header nav ul{
 }
 
 header nav ul button{
-  background-color: darkslategray;
+  background-color: lightgrey;
   border-radius: 15px;
   padding: 15px;
+  border: none;
 }
 
 header .logo{
@@ -63,60 +65,71 @@ header input{
   padding-left: 15px;
 }
 
-.showcase {
-  grid-area: s;
+/* Showcase */
+
+.showcase-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.showcase-item {
+  background-color: darkgray;
+  padding: 100px 50px;
+  border: 1px solid red;
+}
+
+.author figure {
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-.row {
-  display: flex;
+.author figure img {
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 5px;
+  left: 0;
+  right: 0;
+  width: 65.6px;
+  height: 65.6px;
+  box-shadow: 1px gray;
 }
 
-.showcase-1 {
-  flex: 1;
-  background-color: blueviolet;
+.image-frame {
+  width:  75.6px;
+  height: 75.6px;
+  margin-right: 30px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
 }
 
-.showcase-2 {
-  flex: 1;
-  background-color: brown;
-
+.author-name {
+  font-size: large;
 }
 
-.showcase-3 {
-  flex: 1;
-  background-color: chocolate;
+.title {
+  padding: 20px 0; 
+  font-size: xx-large;
+  line-height: 45px;
 }
 
-.showcase-4 {
-  flex: 1;
-  background-color: coral;
-}
-
-/* 
-.showcase-1 {
-  grid-area: s1;
-  background-color: blueviolet;
-}
-
-.showcase-2 {
-  grid-area: s2;
-  background-color: brown;
+.comments {
+  padding-bottom: 20px;
 
 }
 
-.showcase-3 {
-  grid-area: s3;
-  background-color: chocolate;
+.icon-arrow {
+  padding-top: 30px;
 }
 
-.showcase-4 {
-  grid-area: s4;
-  background-color: coral;
-} */
+.image-frame  {
+  transform: scale(1.0) rotateZ(calc(11 * -1deg));
+  transition: all .3s;
+}
 
-.call-to-action {
-  grid-area: c;
-  background-color: black;
+.image-frame:hover  {
+  transform: scale(1.0) rotateZ(0);
+  transition: all .3s;
 }

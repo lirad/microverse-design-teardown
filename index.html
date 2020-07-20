@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="./css/app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Testing linters</title>
 </head>
 
@@ -14,7 +17,7 @@
 
     <div class="logo">
       <a href="#">
-        <img src="assets/img/logo--full.svg" alt="main-logo">
+        <img src="assets/images/logo--full.svg" alt="main-logo">
       </a>
     </div>
 
@@ -27,8 +30,7 @@
         <li>Membership</li>
         <li>
           <button type="button" class="nav-button">
-            more
-            <img src="" alt="cat">
+            More
           </button>
         </li>
       </ul>
@@ -37,17 +39,46 @@
     <input type="text" placeholder="Search articles...">
   </header>
 
-  <main class="grid">
+  <main>
 
-    <section class="showcase">
-      <div class="row">
-        <div class="showcase-1">1</div>
-        <div class="showcase-2">2</div>
-      </div>
-      <div class="row">
-        <div class="showcase-3">3</div>
-        <div class="showcase-4">4</div>
-      </div>
+    <section class="showcase-grid">
+
+      <article class="showcase-item">
+        <div class="author">
+          <figure>
+            <div class="image-frame">
+              <img src="/assets/images/profile-image-placeholder.jpg" alt="Author picture" />
+            </div>
+            <figcaption class="author-name">
+              <span>Aurthor name</span>
+            </figcaption>
+          </figure>
+
+
+        </div>
+
+        <div class="title">
+          <h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+        </div>
+
+        <div class="comments">
+          Comments
+        </div>
+
+        <div class="tags">
+          #lorem #ipsum #dolor
+        </div>
+
+        <div class="icon-arrow">
+          <i class="fa fa-long-arrow-alt-right"></i>
+        </div>
+
+
+
+      </article>
+
 
     </section>
     <section class="call-to-action">
