@@ -1,3 +1,5 @@
+/* reset */
+
 *::before,
 *,
 *::after {
@@ -6,32 +8,59 @@
   box-sizing: border-box;
 }
 
+
+ul{
+  list-style: none;
+}
+
+/* global */
+
 body {
-  
-}
-
-.layout-grid {
+  margin: 0 auto;
+  color: white;
   max-width: 1440px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr 7fr 1fr;
-  /* grid-template-areas:
-    "h h h h h h h h h h h h"
-    "s1 s1 s1 s1 s1 s1 s2 s2 s2 s2 s2 s2"
-    "s3 s3 s3 s3 s3 s3 s4 s4 s4 s4 s4 s4"
-    "c c c c c c c c c c c c" */
-
-    grid-template-areas:
-    "h h h h h h h h h h h h"
-    "s s s s s s s s s s s s"
-    "s3 s3 s3 s3 s3 s3 s4 s4 s4 s4 s4 s4"
-    "c c c c c c c c c c c c"
 }
 
-header {
-  grid-area: s;
-  background-color: red;
-  min-height: 100px;
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 3fr 350px;
+  gap: 10px;
+  padding: 20px 60px;
+  background-color: gray;
+  font-size: 22px;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 50px;
+}
+
+header nav ul button{
+  background-color: darkslategray;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+header .logo{
+  height: 50px;
+  background-color: rgb(39, 39, 39);
+}
+
+header input{
+  border-radius: 15px;
+  border: none;
+  font-size: 25px;
+  outline: none;
+  padding-left: 15px;
 }
 
 .showcase {
