@@ -76,6 +76,17 @@ input {
   padding-left: 15px;
 }
 
+.image-frame {
+  width: 75.6px;
+  height: 75.6px;
+  margin-right: 30px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  transform: scale(1) rotateZ(calc(11 * -1deg));
+  transition: all 0.3s;
+}
+
 .hidden {
   display: none;
 }
@@ -140,6 +151,17 @@ input {
 
 .author-name {
   font-size: large;
+}
+
+.person-of-the-week figure img {
+  width: 250%;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.showcase-item .image-frame img {
+  transform: rotate(0);
 }
 
 .title {
@@ -303,13 +325,6 @@ footer h5 {
 
 .latest-posts-section .ads article * {
   margin-bottom: 20px;
-}
-
-.person-of-the-week figure img {
-  width: 250%;
-  border: 1px solid gray;
-  border-radius: 6px;
-  padding: 5px;
 }
 
 .design-systems .design-systems-image img {
