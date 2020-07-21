@@ -72,6 +72,10 @@ input {
   padding-left: 15px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Showcase */
 
 .showcase-grid {
@@ -243,7 +247,7 @@ article:hover .icon-arrow {
   border-radius: 6px;
 }
 
-.latest-posts-section .ads > p {
+.latest-posts-section .ads h6 {
   margin-bottom: 20px;
   font-size: 12px;
   color: lightgray;
@@ -359,7 +363,7 @@ article:hover .icon-arrow {
   text-decoration: underline;
 }
 
-.shipping-section p {
+.shipping-section h6 {
   font-size: 23px;
   padding: 15px 235px;
   font-weight: 200px;
@@ -623,10 +627,10 @@ footer {
   min-height: 300px;
   right: 0;
   left: 0;
-  
 }
 
-.links-list, .nav-footer {
+.links-list,
+.nav-footer {
   display: flex;
   width: 60%;
   margin: auto;
@@ -638,13 +642,14 @@ footer {
   margin-bottom: 50px;
 }
 
-.links-list li:not(:last-child),.nav-footer li {
+.links-list li:not(:last-child),
+.nav-footer li {
   margin-right: 25px;
 }
 
 .nav-footer {
   margin-top: 30px;
-  list-style: none;  
+  list-style: none;
 }
 
 footer nav ul li a {
@@ -660,5 +665,3 @@ footer p {
   width: 30%;
   margin-top: 30px;
 }
-
-
