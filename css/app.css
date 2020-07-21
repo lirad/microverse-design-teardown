@@ -23,6 +23,10 @@ body {
   position: relative;
 }
 
+.bg-grey{
+  background-color: lightgray;
+}
+
 a {
   text-decoration: none;
   color: gray;
@@ -165,8 +169,7 @@ input {
   margin-top: 50px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr;
-  row-gap: 30%;
-  gap: 10px;
+  gap: 70px 10px;
 }
 
 #section-title {
