@@ -69,7 +69,7 @@ header input {
 
 .showcase-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, 50%);
 }
 
 .showcase-item {
@@ -145,32 +145,59 @@ header input {
 
 .latest-posts-section {
   display: grid;
+  padding: 0 50px;
+  background-color: purple;
   grid-template-columns: 1fr 1fr 1fr;
-
+  gap: 10px;
 }
 
 .latest-posts-section article {
   color: black;
+}
+
+.latest-posts-section div {
+  /* delete this later */
   border: 1px solid black;
 }
+
+
+/* ads sub-section */
 
 .latest-posts-section .ads {
-  grid-row: 1/2;
   grid-column: 1/2;
-  background-color: chartreuse;
+  text-align: center;
 }
+
+.latest-posts-section .ads>p {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.latest-posts-section .ads article {
+  background-color: chartreuse;
+  padding: 15px 30px;
+  border-radius: 11px;
+}
+
+.latest-posts-section .ads article * {
+  margin-bottom: 20px;
+}
+
+.latest-posts-section .ads article img {
+  width: 175px;
+  height: 40px;
+}
+
+.latest-posts-section .ads article button {
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: green;
+  border: 1px solid black;
+}
+
+/* explore-feature sub-section */
 
 .latest-posts-section .explore-feature {
-  grid-row: 1/2;
   grid-column: 2/-1;
   background-color: red;
-}
-
-.latest-posts-section div {
-  grid-column: 2/-1;
-  background-color: blue;
-}
-
-.latest-posts-section div {
-  border: 1px solid black;
 }
