@@ -74,7 +74,6 @@ header input {
 .showcase-item {
   background-color: darkgray;
   padding: 100px 50px;
-  border: 1px solid red;
 }
 
 .showcase-grid> :nth-child(odd) {
@@ -86,7 +85,7 @@ header input {
   align-items: center;
 }
 
-.author figure img {
+.author figure img, .community-links-item .image-frame {
   background-color: gray;
   position: absolute;
   top: 0;
@@ -218,7 +217,7 @@ header input {
   margin-left: 5px;
 }
 
-.lastest-post-description {
+.lastest-post-description, .person-of-the-week-description p, .paragraph {
   line-height: 30px;
   font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
@@ -239,6 +238,7 @@ header input {
   font-size: 12px;
   color: lightgray;
 }
+
 
 .latest-posts-section .ads article {
   background-color: lightgray;
@@ -373,4 +373,73 @@ header input {
 .shipping-section img{
   width: 920px;
   filter: grayscale();
+}
+
+/* Community Links */
+
+
+.person-of-the-week {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  grid-column: 1 / -1;
+}
+
+.person-of-the-week h4{
+  margin-bottom: 30px;
+  font-size: large;
+  letter-spacing: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  color: gray;
+}
+
+
+.person-of-the-week figure {
+  flex: 1;
+}
+
+.person-of-the-week figure img {
+  width: 250%;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 5px;
+
+}
+
+.person-of-the-week-description {
+  flex: 3;
+}
+
+.community-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;
+  padding: 40px;
+
+}
+
+.community-links-item {
+  grid-column: 1 span;
+  display: flex;
+  color: gray;
+  position: relative;
+}
+
+.community-links-item img {
+  width: 100%;
+}
+
+.community-links-item .image-frame {
+  position: relative;
+  margin-right: 25px;
+  border: 3px solid gray;
+}
+
+.communit-links-item-description h5, .communit-links-item-description h6 {
+  padding: 0px ;
+}
+
+.communit-links-item-description h6 {
+  text-decoration: underline;
 }
