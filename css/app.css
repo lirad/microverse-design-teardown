@@ -77,7 +77,7 @@ header input {
   border: 1px solid red;
 }
 
-.showcase-grid > :nth-child(odd) {
+.showcase-grid> :nth-child(odd) {
   background-color: rgb(102, 102, 102);
 }
 
@@ -123,8 +123,20 @@ header input {
 }
 
 .icon-arrow img {
-  padding-top: 30px;
   width: 50px;
+
+}
+
+.icon-arrow {
+  display: inline-block;
+  padding: 30px 15px 30px 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.icon-arrow:hover {
+  background-color: gray;
 }
 
 .image-frame {
@@ -140,6 +152,7 @@ header input {
 /* latest-posts-section*/
 
 .latest-posts-section {
+  position: relative;
   display: grid;
   padding: 0 50px;
   margin-top: 50px;
@@ -149,8 +162,21 @@ header input {
   gap: 10px;
 }
 
+
+#section-title {
+  position: absolute;
+  transform: rotate(90deg);
+  color: black;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+
+
+
 .latest-posts-section article {
   color: black;
+  position: relative;
 }
 
 .time-written {
@@ -166,6 +192,7 @@ header input {
 .latest-posts h3 {
   font-size: x-large;
   margin: 10px 0 20px 0;
+  text-decoration: underline;
 }
 
 .latest-posts {
@@ -196,6 +223,7 @@ header input {
   font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
   color: #333;
+  padding-bottom: 130px;
 }
 
 /* ads sub-section */
@@ -206,7 +234,7 @@ header input {
   border-radius: 6px;
 }
 
-.latest-posts-section .ads > p {
+.latest-posts-section .ads>p {
   margin-bottom: 20px;
   font-size: 12px;
   color: lightgray;
@@ -261,4 +289,88 @@ header input {
 .explore-feature p {
   padding: 20px 0;
   white-space: nowrap;
+}
+
+.explore-feature p:last-child {
+  display: flex;
+}
+
+.explore-feature button {
+  margin-bottom: 10px;
+  padding: 15px 100px;
+  border-radius: 11px;
+  border: none;
+
+}
+
+.explore-feature p a {
+  text-decoration: underline;
+  margin-left: 5px;
+
+}
+
+/* latest articles part */
+
+
+.latest-articles {
+  grid-column: 2/3;
+  padding: 100px 0;
+  margin: 0 auto;
+
+}
+
+.latest-articles p {
+  display: inline-block;
+  text-align: center;
+  border-bottom: 5px solid grey;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.latest-articles p:hover {
+  cursor: pointer;
+}
+
+/* shipping-section */
+
+.shipping-section {
+  width: 100%;
+  background-color: gray;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  text-align: center;
+}
+
+.shipping-section * {
+  margin-bottom: 20px;
+}
+
+.shipping-section a:first-of-type {
+  font-size: 52px;
+  color: white;
+  text-decoration: underline;
+}
+
+.shipping-section p {
+  font-size: 23px;
+  padding: 15px 235px;
+  font-weight: 200px;
+}
+
+.shipping-section a:last-of-type {
+  border: none;
+  font-size: 23px;
+  text-decoration: none;
+  background-color: #fff;
+  color: black;
+  padding: 20px 100px;
+  border-radius: 11px;
+}
+
+.shipping-section img{
+  width: 920px;
+  filter: grayscale();
 }
