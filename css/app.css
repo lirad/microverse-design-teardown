@@ -20,15 +20,13 @@ body {
   color: white;
   max-width: 1440px;
   font-family: "Patua One", cursive;
+  position: relative;
 }
 
 a {
   text-decoration: none;
   color: gray;
 }
-
-
-
 
 /* Header */
 
@@ -66,7 +64,7 @@ header .logo {
   background-color: rgb(39, 39, 39);
 }
 
-header input {
+input {
   border-radius: 15px;
   border: none;
   font-size: 25px;
@@ -86,7 +84,7 @@ header input {
   padding: 100px 50px;
 }
 
-.showcase-grid> :nth-child(odd) {
+.showcase-grid > :nth-child(odd) {
   background-color: rgb(102, 102, 102);
 }
 
@@ -134,7 +132,6 @@ header input {
 
 .icon-arrow img {
   width: 50px;
-
 }
 
 .icon-arrow {
@@ -172,7 +169,6 @@ header input {
   gap: 10px;
 }
 
-
 #section-title {
   position: absolute;
   transform: rotate(90deg);
@@ -180,7 +176,6 @@ header input {
   z-index: 100;
   justify-content: space-between;
 }
-
 
 article:hover .icon-arrow {
   background-color: gray;
@@ -248,12 +243,11 @@ article:hover .icon-arrow {
   border-radius: 6px;
 }
 
-.latest-posts-section .ads>p {
+.latest-posts-section .ads > p {
   margin-bottom: 20px;
   font-size: 12px;
   color: lightgray;
 }
-
 
 .latest-posts-section .ads article {
   background-color: lightgray;
@@ -315,23 +309,19 @@ article:hover .icon-arrow {
   padding: 15px 100px;
   border-radius: 11px;
   border: none;
-
 }
 
 .explore-feature p a {
   text-decoration: underline;
   margin-left: 5px;
-
 }
 
 /* latest articles part */
-
 
 .latest-articles {
   grid-column: 2/3;
   padding: 100px 0;
   margin: 0 auto;
-
 }
 
 .latest-articles p {
@@ -391,7 +381,6 @@ article:hover .icon-arrow {
 
 /* Community Links */
 
-
 .person-of-the-week {
   display: flex;
   justify-content: space-around;
@@ -403,11 +392,10 @@ article:hover .icon-arrow {
   margin-bottom: 30px;
   font-size: large;
   letter-spacing: 2px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
   color: gray;
 }
-
 
 .person-of-the-week figure {
   flex: 1;
@@ -418,7 +406,6 @@ article:hover .icon-arrow {
   border: 1px solid gray;
   border-radius: 6px;
   padding: 5px;
-
 }
 
 .person-of-the-week-description {
@@ -430,7 +417,6 @@ article:hover .icon-arrow {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   padding: 40px;
-
 }
 
 .community-links-item {
@@ -476,7 +462,6 @@ article:hover .icon-arrow {
   padding: 50px 70px;
   color: white;
   background-color: gray;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -487,12 +472,11 @@ article:hover .icon-arrow {
 }
 
 .design-systems .design-systems-info p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   width: 670px;
   margin-bottom: 40px;
   line-height: 1.8;
 }
-
 
 .design-systems .design-systems-info p:first-child {
   font-size: 16px;
@@ -503,7 +487,7 @@ article:hover .icon-arrow {
   margin-top: 20px;
 }
 
-.design-systems .design-systems-info h2 {
+.title-section-article {
   padding: 20px 0;
   font-size: 47px;
 }
@@ -532,10 +516,149 @@ article:hover .icon-arrow {
   box-shadow: -10px 30px 31px -18px rgba(0, 0, 0, 0.75);
 }
 
-
-
-
 .design-systems .design-systems-image img:hover {
   transform: scale(1);
   transition: all 0.3s;
 }
+
+/* Our Guides */
+
+.our-guides {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 70px;
+}
+
+.our-guides-item {
+  background-color: lightgray;
+  border-radius: 6px;
+  box-shadow: 1px darkgray;
+  padding: 25px;
+  grid-column: auto;
+  text-shadow: 0px 1px 0 rgba(250, 247, 247, 0.4);
+}
+
+.our-guides-item h5 {
+  text-transform: uppercase;
+  color: #333;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.our-guides-item h2 {
+  color: #333333;
+  padding-top: 0;
+}
+
+.our-guides-item p {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  color: gray;
+}
+
+.our-guides-item button {
+  padding: 15px;
+  background-color: darkgray;
+  border-radius: 6px;
+  color: #333;
+  margin: 20px 0;
+  border: none;
+  font-size: x-large;
+  text-shadow: 0px 1px 0 rgba(250, 247, 247, 0.4);
+}
+
+.our-guides-item img {
+  width: 100%;
+  filter: grayscale();
+}
+
+.newsletter-join {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-join button {
+  height: 100%;
+  border-radius: 0 6px 6px 0;
+  margin: 0;
+}
+
+.newsletter-join input {
+  border-radius: 6px 0 0 6px;
+}
+
+.disclaimer {
+  padding: 8px;
+  background-color: darkgray;
+  border-radius: 6px;
+  text-align: center;
+  max-width: 40%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.disclaimer p {
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+.our-guides .latest-articles {
+  grid-column: 2 span;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: lightgray;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding: 0 auto;
+  min-height: 300px;
+  right: 0;
+  left: 0;
+  
+}
+
+.links-list, .nav-footer {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  list-style: circle;
+  flex-wrap: wrap;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.links-list li:not(:last-child),.nav-footer li {
+  margin-right: 25px;
+}
+
+.nav-footer {
+  margin-top: 30px;
+  list-style: none;  
+}
+
+footer nav ul li a {
+  text-decoration: underline;
+}
+
+footer h5 {
+  padding-top: 50px;
+  font-size: 18px;
+}
+
+footer p {
+  width: 30%;
+  margin-top: 30px;
+}
+
+
