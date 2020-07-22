@@ -1,19 +1,13 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Positioning and Floating Elements project: New York Times article page
+ This is a Smashing Magazine clone created on a grayscale heat map of the website that indicates which elements have the greatest weight in the visual hierarchy page.
 
-> This is a New York Times article page clone using HTML and CSS3.
-
-## Screenshots of original website
-
-![screenshot](./app-screenshot-original-full.png)
 
 ## Screenshots of our clone website
 
-![screenshot](./app-screenshot-clone-full.png)
+![screenshot](./screenshot.png)
 
 
-The project is built using Html and Css with an extensive use of the grid, flex and float css properties.
+The project is built using Html and Css with an extensive use of the grid, flex and css properties.
 
 ## Built With
 
@@ -23,7 +17,7 @@ The project is built using Html and Css with an extensive use of the grid, flex 
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/cristianCeamatu/microverse-new-york-times-article-page/adding-article-page/index.html)
+[Live Demo Link](https://raw.githack.com/lirad/microverse-design-teardown/features-branch/index.html )
 
 ## To get a local copy up and running follow these simple example steps.
 
@@ -42,11 +36,11 @@ Install and run a live server plugin on you IDE/Text editor and run it from the 
 
 ## Authors
 
-👤 **Cristian Viorel Ceamatu**
+👤 **Mkrtich Sargsyan**
 
-- Github: [@githubhandle](https://github.com/cristianCeamatu)
-- Twitter: [@twitterhandle](https://twitter.com/CeamatuV)
-- Linkedin: [linkedin](https://www.linkedin.com/in/ceamatu-cristian-viorel-7a5469136/)
+- Github: [@githubhandle](https://github.com/MkrtichSargsyan)
+- Twitter: [@twitterhandle](https://twitter.com/MkrtichSargsyan)
+- Linkedin: [linkedin](https://www.linkedin.com/in/mkrtich-sargsyan-921ab0152/)
 
 👤 **Diego Lira**
 
